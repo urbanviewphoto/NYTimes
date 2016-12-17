@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NY Times Search</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body>
+
+	<div id="container"> 
+		<div id="banner">
+			<img src="assets/images/banner.png"/>
+		</div>
+		<div id="search"> 
+			<div id="searchBar">
+				<img src="assets/images/searchbar.png"/>
+			</div>	
+			<br>	
+			<form>
+			    <div class="fields">
+			    	<label for="searchText">Search Term:</label>
+			    	<input type="text" id="searchText" name="searchValue">
+			    	<label for="recordsToRetrieve">Number of Records to Retrieve:</label>
+			    	<select id="recordsToRetrieve" name="records">	
+			    		<option value="5">5</option>
+			    		<option value="10">10</option>
+			    		<option value="25">25</option>
+			    		<option value="50">50</option>
+			    	</select>	
+			    	<label for="startYear">Start Year:</label>
+			    	<input type="year" id="startYear" name="starting">
+			    	<label for="endYear">End Year:</label>
+			    	<input type="year" id="endYear" name="ending">
+			    	<button id="searchButton">Search</button>
+			    	<button id="clearButton">Clear Results</button> 
+			    </div>
+		 	</form>
+		</div>
+	</div>
+
+  <!-- Added link to the jQuery Library -->
+    <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>	
+<!-- add this line when we have the code in place. -->
+    <!-- <script type="text/javascript" src="assets/javascript/Knytimes.js"></script>	 -->
+
+</body>
+</html>
