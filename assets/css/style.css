@@ -27,7 +27,7 @@ input, select {
 button {
 	font-size: 12px;
 	height: 40px;
-	width: 150;
+	width: 120px;
 	background-color: gray;
 	color: white;
 	border-radius: 4px;
@@ -65,8 +65,8 @@ button {
 	margin: auto;
 	margin-top: 0px;
 	margin-left: 34px;
+	/* Initial display=inline-block; with results display=none */
 	display: inline-block;
-	/* Display none while results are being viewed */
 	/*display: none;*/
 }
 
@@ -77,14 +77,13 @@ button {
 }
 
 #results {
-	height: 440px;
 	width: 1140px;
 	border-radius: 6px;
 	border: 2px solid black;
 	margin: auto;
 	margin-top: 0px;
 	margin-left: 34px;
-	/* Initial display until search is executed */
+	/* Initial display=none; when search is done display=inline-block */
 	display: none;	
 	/*display: inline-block;*/
 }
@@ -95,11 +94,34 @@ button {
 	margin: 0px 0px 0px 0px;
 }
 
+#resultsMessage {
+	width: 98%;
+	float: left;
+	margin: -20px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#newSearch {
+	width: 10%;
+	float: left;
+}
+
+#newMessage {
+	font-size: 25px;
+	text-height: 2.0;
+	text-align: left center;
+	width: 85%;
+	float:left;
+	padding: 15px 10px 10px 10px;
+	margin: 0px 0px 0px 10px;
+}
+
 #resultsText {
-	height: 300px;
-	max-height: 300px;
-	width: 95%;
-	margin-left: 20px;
+	width: 96%;
+	float: left;
+	margin: 0px 20px 20px 20px ;
+	border-radius: 4px;
+	border: 2px solid black;	
 }
 
 /*clip: shape(top, right, bottom, left); NB 'rect' is the only available option */

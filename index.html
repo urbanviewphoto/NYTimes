@@ -32,10 +32,10 @@
 			    	<!-- Records to Retrieve - choice of 10, 20, 50 or 100 -->
 			    	<label for="recordsToRetrieve">Number of Records to Retrieve:</label>
 			    	<select id="recordsToRetrieve" name="records">	
-			    		<option value="10">10</option>
-			    		<option value="20">20</option>
+			    		<option value="5">5</option>
+						<option value="10">10</option>			    		
+			    		<option value="25">25</option>
 			    		<option value="50">50</option>
-			    		<option value="100">100</option>
 			    	</select>	
 			    	<!-- Starting Year -->
 			    	<label for="startYear">Start Year:</label>
@@ -45,7 +45,7 @@
 			    	<input type="year" id="endYear" name="ending">
 			    	<!-- Search and Clear buttons with icons -->
 			    	<button id="searchButton" type="button"><i class="fa fa-search" aria-hidden="true"></i> Search</button>
-			    	<button id="clearButton" type="button"><i class="fa fa-trash" aria-hidden="true"></i> Clear Results</button> 
+<!-- 			    	<button id="clearButton" type="button"><i class="fa fa-trash" aria-hidden="true"></i> Clear Results</button>  -->
 			    </div>
 		 	</form>
 		</div>
@@ -57,10 +57,16 @@
 			</div>
 			<br>
 			<div>
-				<!-- Results Textarea -->
-				<textarea rows="10" id="resultsText" style="resize: none;"></textarea>
-				<!-- New Search button -->
-			    <button id="newSearch" type="button"><i class="fa fa-search" aria-hidden="true"></i> New Search</button>				
+				<!-- Results Message -->
+				<div id="resultsMessage"> 
+		    		<button id="newSearch" type="button"><i class="fa fa-search" aria-hidden="true"></i> New Search</button>
+		    		<!-- <p id="newMessage">This is a test message.</p> -->
+		    		<p id="newMessage"></p>
+		    	</div>
+				<!-- Results Text -->		    					
+<!-- 				<div id="resultsText">This is a test article.<br>
+									  This is another test article.</div> -->	
+				<div id="resultsText"></div>							
 			</div>
 		</div>
 	</div>
@@ -68,7 +74,7 @@
   <!-- Added link to the jQuery Library -->
     <script src="https://code.jquery.com/jquery-2.2.3.js"></script>	
 <!-- The Javascript -->
-    <script type="text/javascript" src="assets/javascript/Knytimes.js"></script>	
+    <script type="text/javascript" src="assets/javascript/MergedNYTimes.js"></script>	
 
 </body>
 </html>
